@@ -1,0 +1,17 @@
+<h2>Lista de repositórios</h2>
+
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Full name</th>
+    <th>Description</th>
+  </tr>
+
+  <tr *ngFor="let repository of repositories">
+    <td>{{repository.id}}</td>
+    <td>{{repository.name}}</td>
+    <td>{{repository.full_name}}</td>
+    <td>{{repository.description}}</td>
+  </tr>
+</table>

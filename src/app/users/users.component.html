@@ -1,0 +1,27 @@
+<h1>{{ title }}</h1>
+
+<table border="1">
+  <tr>
+    <th>
+      Id
+    </th>
+    <th>
+      Login
+    </th>
+    <th>
+      Foto
+    </th>
+  </tr>
+
+  <tr *ngFor="let user of users">
+    <td>
+      {{ user.id }}
+    </td>
+    <td>
+      {{ user.login }}
+    </td>
+    <td>
+      <img src="{{ user.avatar_url }}" alt="Photo of {{ user.login }}"/>
+    </td>
+  </tr>
+</table>
